@@ -1,0 +1,92 @@
+/* VARIABLES */
+:root{
+    /* colors */
+    --tab-color: #191919;
+    --white-color: #fff;
+    --home-color: #00f7ff;
+    --recreation-color: #ff0000;
+    --room-color: #adff2f;
+    --restaurant-color: #ee82ee;
+    --contact-color: #ffff00;
+
+}
+
+.nav{
+    background-color: var(--tab-color);
+    position: relative;
+    height: 4em;
+
+    
+}
+.nav_links{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav_link li{
+    color: var(--white-color);
+    opacity: 0.5;
+
+}
+
+
+.nav_link.active li{
+    opacity: 1;
+}
+
+/* home nav */
+.nav_link.active li.pageName1 {
+    color: var(--home-color);
+    text-shadow: 0 0 15px var(--home-color),
+                 0 0 30px var(--home-color),
+                 0 0 45px var(--home-color),
+                 0 0 60px var(--home-color);
+}
+
+
+
+/* recreation nav */
+.nav_link.active li.pageName2 {
+    color: var(--recreation-color);
+    text-shadow: 0 0 15px var(--recreation-color),
+                 0 0 30px var(--recreation-color),
+                 0 0 45px var(--recreation-color),
+                 0 0 60px var(--recreation-color);
+}
+
+
+
+/* room nav */
+.nav_link.active li.pageName3 {
+    color: var(--room-color);
+    text-shadow: 0 0 15px var(--room-color),
+                 0 0 30px var(--room-color),
+                 0 0 45px var(--room-color),
+                 0 0 60px var(--room-color);
+}
+
+
+
+/* restaurant nav */
+.nav_link.active li.pageName4 {
+    color: var(--restaurant-color);
+    text-shadow: 0 0 15px var(--restaurant-color),
+                 0 0 30px var(--restaurant-color),
+                 0 0 45px var(--restaurant-color),
+                 0 0 60px var(--restaurant-color);
+}
+
+
+
+/* contact nav */
+.nav_link.active li.pageName5 {
+    color: var(--contact-color);
+    text-shadow: 0 0 15px var(--contact-color),
+                 0 0 30px var(--contact-color),
+                 0 0 45px var(--contact-color),
+                 0 0 60px var(--contact-color);
+}
+
+
