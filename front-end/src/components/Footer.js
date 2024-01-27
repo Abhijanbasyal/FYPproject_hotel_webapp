@@ -98,8 +98,8 @@ const Footer = () => {
             <div className="text-3xl text-[#e0e0e0]  text-center mini:text-left mb-2 font-bold">Payment Options</div>
             <br />
             <div className="text-white space-x-4 flex p-2 items-center">
-              <a href='#'><div className=""><img src={KhaltiIcon} width={100} alt='' /></div></a>
-              <a href='#'><div className=""><img src={FonepayIcon} width={110} alt='' /></div></a>
+              <div className="opacity-50 hover:opacity-90"><img src={KhaltiIcon} width={100} alt='' /></div>
+              <div className="opacity-50 hover:opacity-90"><img src={FonepayIcon} width={110} alt='' /></div>
             </div>
           </div>
         </div>
