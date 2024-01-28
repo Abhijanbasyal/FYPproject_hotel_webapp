@@ -9,6 +9,7 @@ import Login from './pages/Login/Login.js';
 import Blog from './pages/Blog/Blog.js'
 import Event from './pages/Event/Event.js';
 import Notice from './pages/Notice/Notice.js';
+import Menu from './pages/Restaurant/Menu.js'
 
 function App() {
   return (

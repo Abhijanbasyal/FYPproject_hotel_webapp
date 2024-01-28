@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import ReactPaginate from 'react-paginate';
 
 
-import SwimmingGallery from '../../assets/gallerySwimming.jpg';
-import CookingGallery from '../../assets/galleryCooking.jpg';
-import SnookerGallery from '../../assets/gallerySnooker.jpg';
-import DiningGallery from '../../assets/galleryDinning.jpg';
-import ParkGallery from '../../assets/galleryPark.jpg';
+import SwimmingGallery from '../../assets/Homeimage/gallerySwimming.jpg';
+import CookingGallery from '../../assets/Homeimage/galleryCooking.jpg';
+import SnookerGallery from '../../assets/Homeimage/gallerySnooker.jpg';
+import DiningGallery from '../../assets/Homeimage/galleryDinning.jpg';
+import ParkGallery from '../../assets/Homeimage/galleryPark.jpg';
 
 const Gallery = () => {
   const photos = [
@@ -34,8 +34,8 @@ const Gallery = () => {
   const endSlice = startSlice + imagesPerPage;
 
   return (
-    <div className='relative bg-black text-white h-[42rem]'>
-      <div className=''>
+    <div className='relative bg-[#141414] text-white h-[42rem]'>
+      <div className='border-4 border-white/20 h-full'>
         <div className='max-w-8xl mx-auto h-full text-center overflow-hidden'>
           <h2 className='text-3xl mini:text-4xl font-bold mb-8 p-2 mini:pt-4 text-white '>Gallery</h2>
           <div className='flex flex-col items-center h-full'>

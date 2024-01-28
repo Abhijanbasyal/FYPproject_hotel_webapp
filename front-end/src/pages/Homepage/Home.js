@@ -1,5 +1,5 @@
 import React from 'react';
-import Bghome from '../../assets/bghome.jpg';
+import Bghome from '../../assets/Homeimage/bghome.jpg';
 import Aboutus from './Aboutus'
 import Badge from './Badge';
 import Slider from './Slider';
@@ -13,7 +13,7 @@ const Home = () => {
  
   
   return (
-    <div className=''>
+    <div className='overflow-hidden '>
       <div className='w-full h-screen'>
         <img src={Bghome} alt='/' className=' absolute top-0 left-0 w-full z-0  h-screen ' />
         <div className='bg-black/60 absolute top-0 left-0 w-full h-screen '></div>
@@ -25,17 +25,15 @@ const Home = () => {
               Where outstanding hospitality and modern elegance combine to create a seamless atmosphere of comfort and sophistication for a truly memorable stay.
 
             </p>
-            <button className='btn w-44 uppercase mt-4 mini:p-5 mini:hover:scale-125 rounded-full mini:w-[15rem] font-bold mini:text-2xl'>
+            <button className='btn w-44 uppercase mt-4 mini:p-5 mini:hover:scale-125 rounded-full mini:w-[15rem] font-bold mini:text-2xl ease-in-out duration-500'>
               Book now
             </button>
           </div>
         </div>
       </div>  
       <Aboutus />
-      <Badge />
-      <div className='relative hidden mini:flex'>
-        <Slider  />
-      </div>
+      <Badge />        
+      <Slider  />
       <Customerreviews />
       <Gallery />
       <div className='relative overflow-hidden'>

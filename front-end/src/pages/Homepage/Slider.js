@@ -3,12 +3,12 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import SwiperCore from 'swiper';
 import  { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
 
-import Pool from '../../assets/pool.jpg';
-import Swimming from '../../assets/swimming.jpg';
-import Fooddeliever from '../../assets/fooddeliever.jpg';
-import Freewifi from '../../assets/freewifi.jpg';
+
+import Pool from '../../assets/Homeimage/pool.jpg';
+import Swimming from '../../assets/Homeimage/swimming.jpg';
+import Fooddeliever from '../../assets/Homeimage/fooddeliever.jpg';
+import Freewifi from '../../assets/Homeimage/freewifi.jpg';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -88,27 +88,27 @@ const Slider = () => {
   };
 
   return (
-    <div className='relative h-[49rem] w-screen overflow-hidden bg-black'>
+    <div className='relative  w-screen overflow-hidden bg-[#141414]'>
       
 
       <div className='text-center text-5xl font-bold pt-6'>
         KEWTON HOTEL AWESOME FACILITIES
       </div>
 
-      <div className='relative overflow-hidden h-[40rem] mt-2 mini:m-12 bg-gray-900 '>
+      <div className='relative overflow-hidden h-full mt-2 mini:m-12 bg-gray-900 '>
         <Swiper
           navigation
           pagination={{ clickable: true }}
           loop
           autoplay={{ delay: 2000 }}
           onSlideChange={handleSlideChange}
-          className='swiper-container h-[48rem] mini:max-h-full'
+          className=''
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className='flex w-full h-[48rem]'>
+              <div className='flex flex-col mini:flex-row w-full h-full'>
                 {/* image */}
-                <div className='w-full sm:w-1/2'>
+                <div className='w-full p-2'>
                   <img src={slide} alt={`slide-${index}`} className='h-full w-full object-cover' />
                 </div>
                 {/* description */}

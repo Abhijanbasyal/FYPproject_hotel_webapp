@@ -1,10 +1,10 @@
 import React from 'react'
-import Aboutus1 from '../../assets/Aboutus1.jpg';
-import Aboutus2 from '../../assets/Aboutus2.jpg';
+import Aboutus1 from '../../assets/Homeimage/Aboutus1.jpg';
+import Aboutus2 from '../../assets/Homeimage/Aboutus2.jpg';
 
 const Aboutus = () => {
   return (
-    <div className='relative bg-black/90 h-[80rem] mini:h-screen mini:flex-col'>
+    <div className='relative bg-[#141414]  mini:flex-col'>
 
       <div className='flex flex-col'> 
         {/* for about us */}
@@ -24,7 +24,7 @@ const Aboutus = () => {
 
           <div className=''>
             <div className='p-8 mini:p-2 '>
-              <img src={Aboutus1}  alt='' className=' mini:h-full ' />
+              <img src={Aboutus1}  alt='' className=' mini:h-full object-cover ' />
             </div>
           </div>
         </div> 
@@ -33,7 +33,7 @@ const Aboutus = () => {
         <div className='flex flex-col mini:flex-row  '>
           <div className=''>
             <div className=''>
-                <img src={Aboutus2}  alt='' className='pl-8 pt-2 pr-8 pb-12 h-[20rem] w-[66rem] mini:p-2  mini:h-[28rem] mini:w-[280rem]'/>
+                <img src={Aboutus2}  alt='' className='pl-8 pt-2 pr-8 pb-12 h-[20rem] w-[66rem] mini:p-2  mini:h-[28rem] mini:w-[280rem] object-cover'/>
             </div>
 
           </div>

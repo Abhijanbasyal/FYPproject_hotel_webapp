@@ -1,12 +1,16 @@
 import React from 'react'
-import Badge1 from '../../assets/bestbadge.png'
-import Badge2 from '../../assets/servicebadge.png'
-import Badge3 from '../../assets/naturalbadg.png'
+import Badge1 from '../../assets/Homeimage/bestbadge.png'
+import Badge2 from '../../assets/Homeimage/servicebadge.png'
+import Badge3 from '../../assets/Homeimage/naturalbadge.png'
+import BadgeBgImage from '../../assets/Homeimage/badgebackground.jpg';
 
 const Badge = () => {
   return (
-    <div className='relative  bg-black/40 mini:h-screen flex-col'>
-      <div className='flex flex-col items-center '>
+    <div className='relative  bg-[#141414]  flex-col  border-4 border-white/40 rounded p-2'>
+      <div className='absolute w-full h-full'>
+        <img src={BadgeBgImage}  alt='' className='opacity-20 object-cover h-full w-full'/>
+      </div>
+      <div className='relative flex flex-col items-center '>
           <div className='p-4 mini:p-12 text-4xl text-center mini:text-6xl font-bold text-amber-400'>
             THE KEWTON HOTEL RECOGNITION
           </div>
@@ -15,15 +19,15 @@ const Badge = () => {
             commitment to unparalleled hospitality and exceptional service has earned us prestigious 
             accolades, symbolized with the distinguished badges: 
           </div>
-      </div>
+      </div>  
       <br />
-      <div className='flex flex-col mini:flex-row mini:justify-between mini:pt-20 overflow-hidden mini:px-20 mini:space-x-14 mini:h-[35rem]'>
+      <div className='flex flex-col mini:flex-row mini:justify-between mini:pt-20  mini:px-20 mini:space-x-14 mini:h-[35rem]'>
         
         {/* for best badge */}
-        <div className='mini:relative mini:w-[40rem] mini:h-[17rem] group'>
-          <div className='flex flex-col items-center justify-between p-4 bg-black/80 border-2 rounded-3xl group-hover:border-transparent'>
+        <div className='mini:relative mini:w-[40rem] mini:h-[17rem] z-10  group'>
+          <div className='flex flex-col items-center justify-between p-4 bg-[#141414] border-2 rounded-3xl group-hover:border-transparent'>
             <div className=''>
-              <img src={Badge1} width={200} alt='' className='h-[12.5rem]'/>
+              <img src={Badge1} width={200} alt='' className='h-[12.5rem] '/>
             </div>
             <div className='p-6 text-3xl text-center'>
               BEST HOTEL OF THE YEAR 
@@ -44,8 +48,8 @@ const Badge = () => {
 
 
         {/* for top service badge */}
-        <div className='mini:relative mini:w-[40rem] mini:h-[17rem] group'>
-          <div className='flex flex-col items-center justify-between p-4 bg-black/80 border-2 rounded-3xl group-hover:border-transparent'>
+        <div className='mini:relative mini:w-[40rem] mini:h-[17rem] z-10 group'>
+          <div className='flex flex-col items-center justify-between p-4 bg-[#141414] border-2 rounded-3xl group-hover:border-transparent'>
             <div className=''>
               <img src={Badge2} width={200} alt='' />
             </div>
@@ -66,8 +70,8 @@ const Badge = () => {
         </div>
 
         {/* for natural food badge */}
-        <div className='mini:relative mini:w-[40rem] mini:h-[17rem] group'>
-          <div className='flex flex-col items-center justify-between p-4 bg-black/80 border-2 rounded-3xl group-hover:border-transparent'>
+        <div className='mini:relative mini:w-[40rem] mini:h-[17rem] z-10 group'>
+          <div className='flex flex-col items-center justify-between p-4 bg-[#141414] border-2 rounded-3xl group-hover:border-transparent'>
             <div className=''>
               <img src={Badge3} width={200} alt='' />
             </div>

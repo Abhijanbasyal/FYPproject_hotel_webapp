@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import CustomerReviewsVideo from '../../assets/customerReviews.mp4'
+import CustomerReviewsVideo from '../../assets/Homeimage/customerReviews.mp4'
 
 const CustomerReviews = () => {
   const reviews = [
@@ -72,7 +72,7 @@ const CustomerReviews = () => {
   }, [reviews.length]);
 
   return (
-    <div className='relative py-16 bg-black text-white '>
+    <div className='relative py-16 bg-black text-white  '>
       <div className='absolute inset-0 z-10'>
         <video
           autoPlay
@@ -83,11 +83,12 @@ const CustomerReviews = () => {
           <source src={CustomerReviewsVideo} type='video/mp4' />
         </video>
       </div>
-      <div className='relative z-20 max-w-3xl mx-auto text-center'>
-        <h2 className='text-4xl font-bold mb-8 text-white uppercase'>Customer Reviews</h2>
+      <h2 className='text-4xl font-bold mb-8 text-white uppercase text-center'>Customer Reviews</h2>
+      <div className='relative z-20 max-w-3xl mx-auto text-center border-2 border-[#c9c6c2] rounded-3xl p-14'>
+        
         <div className='flex flex-wrap justify-center gap-8 overflow-auto' style={{ maxHeight: '400px' }}>
           {reviews.slice(0, visibleReviews).map((review) => (
-            <div key={review.id} className='bg-black p-6 rounded-lg shadow-md w-full sm:w-1/2 lg:w-1/3'>
+            <div key={review.id} className='bg-[#141414] p-6 rounded-lg shadow-md w-full sm:w-1/2 lg:w-1/3'>
               <p className='text-yellow-500 text-xl font-bold mb-4'>{review.title}</p>
               <p className='text-white mb-4'>{review.review}</p>
               <p className='text-white font-semibold'>{review.name}</p>

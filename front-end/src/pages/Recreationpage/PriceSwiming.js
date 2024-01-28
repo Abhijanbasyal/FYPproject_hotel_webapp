@@ -21,7 +21,7 @@ const PriceSwiming = () => {
             <div className='relative text-center text-4xl p-4 font-bold uppercase'>
                 Click to view rates for water activities
             </div>
-            <div className="pricecardcontainer flex  flex-wrap justify-between mini:justify-center mini:space-x-12">
+            <div className="pricecardcontainer flex  flex-wrap justify-around mini:justify-center mini:space-x-12">
                 {/* card 1 for swimming */}
                 <div className="pricecard relative">
                     <div className="face face1 ">
