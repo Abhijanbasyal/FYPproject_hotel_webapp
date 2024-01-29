@@ -19,7 +19,7 @@ const RestaurantSlider = () => {
   const slides = [
     {
       image: BurgerImage,
-      description: <div>Savor our delicious dinner! Burger</div>,
+      description: <div >Savor our delicious dinner! Burger</div>,
     },
     {
       image: CoffeeImage,

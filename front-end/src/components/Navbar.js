@@ -5,7 +5,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { IoCartSharp } from "react-icons/io5";
 import { IoStar } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
-import './Logo.css';
 import './Navbar.css';
 
 const Navbar = () => {

@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import RestaurantImage from '../../assets/RestaurantImage/Restaurant.jpg';
 import Footer from '../../components/Footer';
 import AboutRestaurant from './AboutRestaurant';
 import RestaurantSlider from './RestaurantSlider';
-import Menu from '../../pages/Restaurant/Menu'
+import Menu from './Menu';
+import { useNavigate } from 'react-router-dom';
+
 
 const Restaurant = () => {
+
+  const navigate = useNavigate();
+
+  useEffect(()=>{
+
+    navigate('/restaurant/salad')
+
+  },[])
+
+  
   return (
     <div className='flex flex-col overflow-hidden' >
       <div className='w-full h-[20rem] mini:h-[24rem] '>
