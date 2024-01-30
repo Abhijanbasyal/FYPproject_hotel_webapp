@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         site: "url('./assets/homepage.jpg')",
+        contactusbg : "url('./assets/Contactimage/Contactus.jpg')",
       },  
     },
    

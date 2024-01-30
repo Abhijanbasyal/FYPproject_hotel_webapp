@@ -114,7 +114,7 @@ const Navbar = () => {
     
 
   return (
-     <div className={`absolute z-40 bg-black/60 w-full flex-col overflow-hidden ${scrolling ? 'mini:h-[7.4rem] mini:sticky mini:top-0 ease-in-out duration-500' : 'h-44'}`}>
+     <div className={`absolute z-40 bg-black/60 w-full flex-col overflow-hidden  ${scrolling ? 'mini:h-[7.4rem] mini:sticky mini:top-0 ease-in-out duration-1000' : 'h-44'}`}>
 
         <div className={`flex justify-between items-center  ${scrolling ? 'bg-black' : 'bg-black/80'}`} >
            
