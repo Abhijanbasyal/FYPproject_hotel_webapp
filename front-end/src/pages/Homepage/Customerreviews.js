@@ -88,10 +88,10 @@ const CustomerReviews = () => {
         
         <div className='flex flex-wrap justify-center gap-8 overflow-auto' style={{ maxHeight: '400px' }}>
           {reviews.slice(0, visibleReviews).map((review) => (
-            <div key={review.id} className='bg-[#141414] p-6 rounded-lg shadow-md w-full sm:w-1/2 lg:w-1/3'>
-              <p className='text-yellow-500 text-xl font-bold mb-4'>{review.title}</p>
-              <p className='text-white mb-4'>{review.review}</p>
-              <p className='text-white font-semibold'>{review.name}</p>
+            <div key={review.id} className='bg-[#141414] p-6 rounded-lg shadow-md w-full '>
+              <div className='text-yellow-500 text-xl font-bold mb-4'>{review.title}</div>
+              <div className='text-white mb-4'>{review.review}</div>
+              <div className='text-white font-semibold'>{review.name}</div>
             </div>
           ))}
         </div>

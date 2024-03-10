@@ -50,7 +50,7 @@ const RestaurantSlider = () => {
   return (
     <div className='relative bg-[#141414]  w-full overflow-hidden'>
         <div className='absolute'>
-           <img src={SliderBackgroundImage} alt='' className='object-cover w-full h-full opacity-10' />
+           <img src={SliderBackgroundImage} alt='' className='object-cover w-full h-full opacity-25' />
         </div>
         <div className='p-4 mini:p-16'>
 
@@ -66,7 +66,7 @@ const RestaurantSlider = () => {
             >
                 {slides.map((slide) => (
                 <SwiperSlide key={slide} className=''>
-                    <div className='w-full h-full bg-[#141414] opacity-80 hover:opacity-100 '>
+                    <div className='w-full h-full bg-[#141414] opacity-80 hover:opacity-100 border-white border-2 '>
                         <img src={slide.image} alt='' className='object-cover w-full h-full absolute ' />
                         <div className='relative text-4xl flex flex-col w-full h-full  justify-center text-center  mini:text-8xl font-bold uppercase text-[#c9c6c2] '>{slide.description}</div>
                     </div>

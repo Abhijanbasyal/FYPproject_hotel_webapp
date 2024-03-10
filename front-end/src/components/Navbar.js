@@ -114,7 +114,7 @@ const Navbar = () => {
     
 
   return (
-     <div className={`absolute z-40 bg-black/60 w-full flex-col overflow-hidden ${scrolling ? 'mini:h-[7.4rem] mini:sticky mini:top-0 ease-in-out duration-500' : 'h-44'}`}>
+     <div className={`absolute z-40 bg-black/60 w-full flex-col overflow-hidden  ${scrolling ? 'mini:h-[7.4rem] mini:sticky mini:top-0 ease-in-out duration-1000' : 'h-44'}`}>
 
         <div className={`flex justify-between items-center  ${scrolling ? 'bg-black' : 'bg-black/80'}`} >
            
@@ -150,7 +150,7 @@ const Navbar = () => {
                         <NavLink to='/room' className='nav_link p-4 text-[22px]  w-36 text-center font-bold hover:scale-150 ease-in-out duration-300 '>
                             <li className='pageName3'>Room</li>
                         </NavLink>
-                        <NavLink to='/restaurant' className='nav_link p-4 text-[22px] w-36  text-center font-bold hover:scale-150 ease-in-out duration-300   '>
+                        <NavLink to='/restaurant' replace={true} className='nav_link p-4 text-[22px] w-36  text-center font-bold hover:scale-150 ease-in-out duration-300   '>
                             <li className='pageName4'>Restaurant</li>
                         </NavLink>
                         <NavLink to='/contact' className='nav_link p-4 text-[22px] w-36  text-center font-bold hover:scale-150 ease-in-out duration-300  '>
@@ -168,7 +168,7 @@ const Navbar = () => {
                 </div>
                 
                 <div className='text-4xl mini:text-4xl '>
-                    <NavLink  to ='/login'>
+                    <NavLink  to ='/username'>
                         <CgProfile  className=' hover:text-yellow-400 ease-in-out duration-150 '/>
                     </NavLink> 
                 </div>
@@ -195,8 +195,8 @@ const Navbar = () => {
                     <NavLink to='/event'>
                         <li className=' text-2xl px-10 py-2 border-r-2 border-r-white'>Event</li>
                     </NavLink>
-                    <NavLink to='/notice'>
-                    <li className=' text-2xl px-10 py-2'>Notice</li>
+                    <NavLink to='/service'>
+                    <li className=' text-2xl px-10 py-2'>Service</li>
                     </NavLink>
                 </ul>
             </div>
@@ -243,7 +243,7 @@ const Navbar = () => {
                 <ul className='pt-20 uppercase p-4 '>
                     <li className='p-4 border-b-2 border-blue-700 text-xl text-center'>Blog</li>
                     <li className='p-4 border-b-2 border-blue-700 text-xl text-center'>Event</li>
-                    <li className='p-4  text-xl text-center'>Notice</li>
+                    <li className='p-4  text-xl text-center'>Service</li>
                 </ul> 
                 <p className=' p-2 text-center font-semibold  '>
                     Welcome to our Secondary Menu!

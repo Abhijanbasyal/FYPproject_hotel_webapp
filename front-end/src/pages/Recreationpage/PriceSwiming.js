@@ -5,7 +5,7 @@ import './Recreation.css';
 const PriceSwiming = () => {
   return (
     <div className='relative  bg-[#141414]   w-full overflow-hidden '>
-        <div className='absolute'>
+        <div className='absolute w-full h-full'>
             <video
             autoPlay
             loop

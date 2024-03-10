@@ -7,12 +7,12 @@ import FonepayIcon from '../assets/fonepayicon.png';
 
 const Footer = () => {
   return (
-    <div className="relative w-full h-[76rem] mini:h-[25rem] overflow-hidden">
+    <div className="relative w-full h-[83rem] mini:h-[30rem] overflow-hidden" >
       {/* Background image */}
       <div className="absolute w-full h-full">
         <img src={FooterBG} alt="" className="object-cover w-full h-full" />
       </div>
-      <div className="reltaive w-full h-full absolute bg-black/80 border-white rounded border-2 border-double"></div>
+      <div className="absolute w-full h-full  bg-black/80 border-white rounded border-2 border-double"></div>
       {/* for the content */}
       <div className="absolute flex flex-col w-full mini:p-14 h-full">
           
