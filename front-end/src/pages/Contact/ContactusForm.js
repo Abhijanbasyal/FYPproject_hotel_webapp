@@ -1,4 +1,4 @@
-import React, { useState, useTransition } from 'react';
+import React, { useState } from 'react';
 import InstagramSlider from '../../assets/Contactimage/instagramslider.jpg';
 import FacebookSlider from '../../assets/Contactimage/facebookslider.jpg';
 import TwitterSlider from '../../assets/Contactimage/twitterslider.jpg';

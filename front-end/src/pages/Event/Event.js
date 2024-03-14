@@ -1,8 +1,9 @@
 import React from 'react'
 import EventBgImage from '../../assets/EventImage/eventHeading.jpg';
 import Footer from '../../components/Footer';
-import Aboutevent from './Aboutevent'
- 
+import Aboutevent from './Aboutevent';
+import ServiceEvents from './ServiceEvents.js'; 
+import BookingRoomEvent from './BookingRoomEvent.js';
 
 const Event = () => {
   return (
@@ -14,6 +15,8 @@ const Event = () => {
         </div>
       </div> 
       <Aboutevent/>
+      <ServiceEvents />
+      <BookingRoomEvent />
 
       <div className='relative overflow-hidden'>
         <Footer />

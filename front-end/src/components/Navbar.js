@@ -168,7 +168,7 @@ const Navbar = () => {
                 </div>
                 
                 <div className='text-4xl mini:text-4xl '>
-                    <NavLink  to ='/username'>
+                    <NavLink  to ='/login'>
                         <CgProfile  className=' hover:text-yellow-400 ease-in-out duration-150 '/>
                     </NavLink> 
                 </div>
@@ -178,11 +178,11 @@ const Navbar = () => {
         </div>
 
         <div className='hidden mini:flex justify-between items-center h-14 '>
-            <div className='w-[23rem] ml-5 flex items-center border-r-4 border-r-lime-600 mt-1 overflow-hidden'>
-                <span className='text-orange-300 font-semibold w-52 p-3 uppercase'>
+            <div className='w-[23rem] ml-5 flex items-center  mt-1 overflow-hidden'>
+                <span className='text-[#8f8b8b] font-semibold w-52 p-3 uppercase'>
                     <span>Date:</span> {currentDate}
                 </span>
-                <span className='text-orange-300  font-semibold w-52 p-3 uppercase'>
+                <span className='text-[#8f8b8b]  font-semibold w-52 p-3 uppercase'>
                     <span>Time:</span> {currentTime}
                 </span>
             </div>
@@ -200,8 +200,8 @@ const Navbar = () => {
                     </NavLink>
                 </ul>
             </div>
-            <div className='w-[24rem] flex items-center  mt-1 border-l-4 border-l-lime-600 overflow-hidden '>
-                <span className='text-orange-300   font-semibold uppercase p-3 '>{currentLocation}</span>
+            <div className='w-[24rem] flex items-center  mt-1  overflow-hidden '>
+                <span className='text-[#8f8b8b]   font-semibold uppercase p-3 '>{currentLocation}</span>
             </div>
         </div>
 

@@ -13,18 +13,8 @@ import DishMenu from './pages/Restaurant/Menu/DishMenu.js';
 import DrinksMenu from './pages/Restaurant/Menu/DrinksMenu.js';
 import DesertMenu from './pages/Restaurant/Menu/DesertMenu.js';
 import BeverageMenu from './pages/Restaurant/Menu/BeverageMenu.js';
-
-import Username from './pages/LoginSIgnup/Username.js';
-import Password from './pages/LoginSIgnup/Password.js';
-import Recovery from './pages/LoginSIgnup/Recovery.js';
-import Reset from './pages/LoginSIgnup/Reset.js';
-import Register from './pages/LoginSIgnup/Register.js';
-import PageNotFound from './pages/LoginSIgnup/PageNotFound.js';
-import Profile from './pages/LoginSIgnup/Profile.js';
-
-
-// middleware
-import {AuthorizeUser, ProtectRoute} from './middleware/auth.js'
+import Login from './pages/LoginSIgnup/Login.js';
+import SignUp from './pages/LoginSIgnup/SignUp.js'
 
 function App() {
   return (
@@ -54,13 +44,10 @@ function App() {
           <Route path='/contact' element={<Contact />}/>
           
           {/* login register routing */}
-          <Route path='/username' element={<Username />}/>
-          <Route path='/register' element={<Register />}/>
-          <Route path='/password' element={<ProtectRoute><Password /></ProtectRoute>}/>  
-          <Route path ='/recovery' element={<Recovery />}/>
-          <Route path='/reset' element={<Reset />}/>  
-          <Route path='/profile' element={<AuthorizeUser><Profile /></AuthorizeUser>}/>
-          <Route path='*' element={<PageNotFound />}/>   
+
+          <Route path='/login' element={< Login />}/>
+          <Route path='/signup' element={< SignUp />}/>
+
 
           <Route path='/blog' element={<Blog />}/>
           <Route path='/event' element={<Event />}/>
