@@ -241,9 +241,18 @@ const Navbar = () => {
             </div>
             <div className={secondnav? 'fixed top-44 left-0 h-96 w-full bg-black/100 cursor-pointer  mini:hidden ' : 'fixed left-[30000rem] mini:hidden'}>
                 <ul className='pt-20 uppercase p-4 '>
-                    <li className='p-4 border-b-2 border-blue-700 text-xl text-center'>Blog</li>
-                    <li className='p-4 border-b-2 border-blue-700 text-xl text-center'>Event</li>
-                    <li className='p-4  text-xl text-center'>Service</li>
+                    <NavLink to='/blog'>
+                        <li className='p-4 border-b-2 border-blue-700 text-xl text-center'>Blog</li>
+
+                    </NavLink>
+                    <NavLink to='/event'>
+                        <li className='p-4 border-b-2 border-blue-700 text-xl text-center'>Event</li>
+
+                    </NavLink>
+                    <NavLink to='/service'>
+                        <li className='p-4  text-xl text-center'>Service</li>
+
+                    </NavLink>
                 </ul> 
                 <p className=' p-2 text-center font-semibold  '>
                     Welcome to our Secondary Menu!
