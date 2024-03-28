@@ -3,6 +3,7 @@ import RestaurantImage from '../../assets/RestaurantImage/Restaurant.jpg';
 import Footer from '../../components/Footer';
 import AboutRestaurant from './AboutRestaurant';
 import RestaurantSlider from './RestaurantSlider';
+import Tablereservation from './TableReservation/Tablereservation';
 import Menu from './Menu';
 import { useNavigate } from 'react-router-dom';
 
@@ -29,6 +30,7 @@ const Restaurant = () => {
       <AboutRestaurant />
       <RestaurantSlider />  
       <Menu />
+      <Tablereservation />
       <div className='relative overflow-hidden'>
         <Footer />
       </div> 
